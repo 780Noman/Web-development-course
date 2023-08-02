@@ -27,7 +27,7 @@ Getting Started
 To get started, you can either clone this repository or download the content as a ZIP file. The examples and explanations are categorized into different topics for ease of navigation.
 
 Copy code
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/780Noman/Web-development-course/blob/main
 
 The repository covers the following topics:
 
