@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Selector</title>
+    <style>
+    .container{
+        border: 4px solid gray;
+        padding: 45px 35px;
+        margin: auto;/*If you want to write content in center then write aute.*/
+        width:799px;
+        background-color: beige;
+    }
+    .btn{
+        border: 3px solid rgb(96, 96, 182);
+        background-color: aqua;
+        cursor: pointer;/*if you want that your cursor show on button*/
+        padding: 3px 3px;
+        margin: auto ;
+        width: 150px;
+        font-size: 12px;
+        font-style: italic;
+        border-radius: 30px;
+    }
+    a{
+        text-decoration: none;/*If you give none than underline of a tag remove.*/
+    }
+    /*If you want when you move cursor on a tag its color are change*/
+    /*Pesudo Selector*/
+    a:hover{
+        color: rgb(207, 76, 15);
+        background-color: rgb(114, 49, 49);
+    }
+    a:visited{
+        color:black;
+    }
+    a:active{
+        background-color: aliceblue;
+    }
+    .btn:hover{
+        background-color: blue;
+        border: 4px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="cont1" class="container">
+        <h3>This is a heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis amet possimus provident, aut voluptatum
+            cum consequatur. Mollitia, consequuntur neque voluptatum ipsa, voluptatem, impedit hic eius expedita
+            incidunt quisquam ea totam.</p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body{
+            font-family: 'Rubik Iso', cursive;
+        } */
+        .container {
+            background-color: rgb(116, 125, 151);
+            width: 900px;
+            border: 4px solid rgb(45, 45, 100);
+            margin: 40px auto;
+            /*If you want to take center content than write this auto.*/
+        }
+
+        .item {
+            border: 3px solid rgb(51, 7, 7);
+            border-radius: 15px;
+            padding: 12px 30px;
+            margin: 20px 50px;
+            background-color: rgb(133, 97, 97);
+        }
+
+        #Fruits {
+
+            float: right;
+            width: 90%;
+        }
+
+        #computer {
+            float: right;
+            width: 90%;
+        }
+
+        #Glasses {
+            float: left;
+            width: 90%;
+            clear: left;
+            /*If you want not overlap paragraph each other then write this.*/
+        }
+
+        #Stationary {
+            width: 90%;
+            clear: left;
+        }
+
+        p,
+        h1,
+        h3 {
+            /* text-align: right;
+            text-align:justify;
+            text-align: left; */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="item" style="background-color: bisque;">Welcome to my Store</h1>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit vel
+                modi illo ipsa numquam dolore
+                vitae similique. Accusamus architecto officiis ipsum soluta itaque temporibus recusandae obcaecati iure,
+                facere et.</p>
+        </div>
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, culpa
+                dolorem non consectetur nulla eum
+                necessitatibus quibusdam. Dignissimos blanditiis deserunt magni minus quae est libero officiis? Illo,
+                nemo? Vero, </p>
+        </div>
+        <div id="Glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="Glassespara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nisi quidem
+                possimus impedit totam odio
+                quod quas ut, sunt, fugiat necessitatibus, aliquam architecto. Quam eaque aspernatur quod, error rerum
+                quidem.</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nisi
+                quidem
+                possimus impedit totam odio
+                quod quas ut, sunt, fugiat necessitatibus, aliquam architecto. Quam eaque aspernatur quod, error rerum
+                quidem.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    #box{
+        display: flex;
+        background-color: brown;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        align-items: center;
+        color: azure;
+        /* Transition mean changing from one state to other only these property they value are continous  */
+        /* transition-property: background-color;
+        transition-duration: 3s;
+        /* transition-timing-function: ease-in; */
+        /*transition-delay: 2s; */
+        
+        /* Shorthand property method in one line */
+        /* transition:  transition-property transition-duration transition-timing-function transition-delay */
+        /* transition: background-color 3s ease-in 5s; */
+        transition: all 3s ease-in 1s;
+    }
+    #box:hover{
+        background-color: rebeccapurple;
+        height: 300px;
+        width: 400px;
+        border-radius: 70px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <h2>This is CSS Transition </h2>
+    <div class="container">
+        <div id="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

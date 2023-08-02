@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>-Personel Info page-</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="MyName">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="MyRole">
+        </div>
+        <br>
+        </div>
+        <!--name attriute is used for backend storing data.-->
+        Email: <input type="email" name="MyEmail">
+        <div>
+            <br>
+            <div>
+                Date :<input type="date" name="MyDate">
+            </div>
+            <br>
+            <div>
+                Bonus:<input type="number" name="Mybonus">
+            </div>
+            <br>
+            <div><!--It provide simple checkbox button-->
+                Are You Eligible?:<input type="checkbox" name="MyEligibility" ><!--checked if you want to check boc-->
+            </div>
+            <br>
+            <div><!--in type=radio in which we select only one checkbox -->
+                Gender :Male<input type="radio" name="MyGender"> Female<input type="radio" name="MyGender"> Other<input type="radio" name="MyGender">
+            </div>
+            <br>
+            <div><!--It provide a text area for where you write somethin.-->
+                Write About Yourself ?:<br> <textarea name="MyText" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="Degree">DEGREE</label>
+                <select name="myDegree" id="Degree">
+                    <option value="bscs">BSCS</option>
+                    <option value="bsse">BSSE</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now">
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset Now">
+            </div>
+            
+    </form>
+</body>
+
+</html>

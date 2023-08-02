@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+    .box{
+        width: 870px;
+        height: 545px;
+    }
+    #box1{
+background-color: black;
+
+    }
+    #box2{
+        /* will hide the element byt will show its space */
+        /* display: none; */
+        /* Will hide the element but will show its empty space */
+        /* visibility: hidden; */
+    background-color: green;
+    position: relative;
+    top:15px;
+    z-index: -450px;
+    }
+    #box3{
+        /*z-index will work only for position :relative,absolute, fixed or sticky;  */
+        /* position: relative;
+        top:220px; */
+        /* z-index: 45px; */
+    background-color: red;
+    }
+    #box4{
+        position: relative;
+        top:70px;
+        background-color:yellow;
+    }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 and then pres enter button four div are created  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

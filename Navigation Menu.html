@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(34, 7, 7);
+            border-radius: 30px;
+        }
+
+        .navbar li {
+            float: left;
+            /*When we write float then its overflow from parents.*/
+            list-style: none;
+            padding: 1px 2px;
+            /*If you want to remove dots than write this.*/
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /*Write for returning the background color of navigation bar.*/
+            margin: 3px 20px;
+            padding: 5px 15px;
+        }
+
+        .navbar li a {
+            padding: 40px 35px;
+            margin: 2px 20px;
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .navbar li a:hover {
+            /* background-color: brown; */
+            color: blue
+        }
+
+        .search {
+            padding: 1px 150px;
+            margin: 2px 3px;
+        }
+
+        .search input {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 2px;
+            margin-left: 270px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contach Us</a></li>
+                <li><a href="#">Service</a></li>
+                <div class="search">
+                    <input type="text" id="search" name="search" placeholder="Search This website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID USING MEDIA Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            font-size: 40px;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        @media only screen and (min-width:400px) and (max-width:500px) {
+            body {
+                background-color: rebeccapurple;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width:600px) and (max-width:800px) {
+            body {
+                background-color: #a51818;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media (min-width:850px) {
+            body {
+                background-color: blue;
+            }
+
+            pre {
+                text-align: center;
+            }
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 30px;
+            background-color: rgb(212, 130, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now" id="navbar">
+            <pre>Home             About                  Contact Us           Help    </pre>
+        </nav>
+        <section class="border-now" id="section">
+            <h2>This is Altimate Web development course. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam ea nulla voluptatibus a soluta. Aut, sapiente excepturi. Numquam totam, nihil hic adipisci
+                laborum ad deleniti obcaecati ratione laboriosam culpa, dolore, magnam ut tempora. Maiores, odit!
+                Voluptatibus fugiat consequuntur culpa numquam recusandae, saepe excepturi tempora laboriosam enim,
+                labore maiores explicabo harum?</h2>
+        </section>
+        <aside class="border-now" id="aside">
+            <h1>This a Aside tag in Html.</h1>
+        </aside>
+    </div>
+    <footer class="border-now">
+        This is a footer tag in Html.
+    </footer>
+</body>
+
+</html>

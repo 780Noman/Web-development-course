@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web page</title>
+    </head>
+    <body>
+        <hr>
+        <h1><center>--Personel Info Page--</center></h1>
+        <hr>
+        <form action="Backend.php">
+            <br>
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="Myname" id="name"><!--Always for and id Values are same-->
+            </div>
+            <br>
+            <div>
+                <label for="rolno"> Roll No</label>
+                <br>
+                <input type="number" name="MyRoll" id="rolno">
+            </div>
+            <br>
+            <div>
+                <label for="fname">Father Name</label>
+                <br>
+                <input type="text" name="Fname" id="fname">
+            </div>
+            <br>
+            <div>
+                <label for="mail">Email</label>
+                <br>
+                <input type="email" name="Mymail" id="mail">
+            </div>
+            <br>
+            <div>
+                <label for="sec">Section</label>
+                <br>
+                <input type="text" name="Mysection" id="sec">
+            </div>
+            <br>
+            <div>
+                <label for="num">Phone No</label>
+                <br>
+                <input type="number" name="Mynum" id="num">
+            </div>
+            <br>
+            <div>
+                <label for="dat">Date of birth</label>
+                <br>
+                <input type="date" name="Mydate" id="dat">
+            </div>
+            <br>
+            <div>
+                <label for="elg">Are you Eligible?</label>
+                <input type="checkbox" name="Myeligiblity" id="elg">
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender</label>
+                <br>
+                Male<input type="radio" name="MyGender" id="gender"> Female<input type="radio" name="MyGender" id="gender"> 
+            </div>
+            <br>
+            <div>
+                <label for="Writetext"></label>
+                Write About Yourself?: <br> <textarea name="Mytext" cols="30" rows="10" id="Writetext"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="Degree">Degree</label>
+                <select name="MyDegree" id="Degree">
+                    <option value="bscs">BSCS</option>
+                    <option value="bsse">BSSE</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now">
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset Now">
+            </div>
+        </form>
+        <br>
+        <hr>
+    </body>
+</html>

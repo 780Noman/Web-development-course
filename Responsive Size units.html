@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* view port height/width  */
+            /* width: 400px; */
+            width: 100vw;
+            /* height: 1300px; */
+            height: 100vh;
+            font-size: 10px;
+            border: 3px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        .First{
+            /* font-size: 3em;Is ka mean ya ha ke ye apny parent element ka 10guna zayda font-size leny lga ha. */
+           /* padding: 3em;3padding * font size10 =30padding */
+        }
+        .Second{
+            /* ya rem element apny html page ke sath apny font ko resize ker leta ha. */
+            /* font-size: 3rem;/* 25px html *3 rem =75px*/
+            /* padding: 3rem; */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="First">This is first Heading</h1>
+        <h1 class="Second">This is Second Heading</h1>
+        <h1 class="Third">This is Third Heading</h1>
+    </div>
+</body>
+</html>

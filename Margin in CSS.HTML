@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding in CSS</title>
+    <STYLE>
+        /* Universal selector */
+        * {
+            background-color: rgb(175, 140, 184);
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(101, 150, 150);
+
+            margin: 40px;
+            padding: 25px;
+            border: 5px solid black;
+            border-radius: 20px;
+            /* margin-top: 12px;
+            margin-bottom: 120px;
+            margin-left: 250px;
+            margin-right: 250px; */
+            /* margin:45px 56px 45px 60px; "Margin: top right bottom left */
+            margin: 14px 300px;/*If you want to give same two side padding then
+            margin:y(top/bottom) x(left/right);*/
+            /* width: 1000px; */
+        }
+
+        .center{
+            margin-left: 550px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <br>
+    <div>
+        <h2 class="center">This is First heading.</h2>
+        <p class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, pariatur fuga ut id illum
+            adipisci repellat
+            labore delectus expedita odio reiciendis eos eum.</p>
+    </div>
+    <div>
+        <h2 class="center">This is second heading</h2>
+        <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit distinctio maiores earum aut, porro
+            explicabo! Ipsam autem nisi temporibus minus.</p>
+    </div>
+    <div>
+        <h2 class="center">This is third heading</h2>
+        <p class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nisi deleniti beatae aliquid velit sunt
+            doloribus porro voluptatem ipsam alias?</p>
+    </div>
+    <br>
+    <div>
+        <button style="border:5px solid rgb(46, 46, 136)">Previous</button>
+        <button  style="margin-left:1330px; border:5px solid rgb(46, 46, 136)">Next</button>
+    </div>
+
+</body>
+
+</html>

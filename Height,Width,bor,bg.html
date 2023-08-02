@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width , Borders and backgrounds</title>
+    <style>
+        #firstpara{
+            color:rebeccapurple;
+            background-color: red;
+            height: 60px;
+            width: 400px;
+            border: 5px solid goldenrod;/* both are same */
+            /* border-width: 5px;
+            border-color: goldenrod;
+            border-style: solid; */
+            border-radius: 50px;
+        }
+        #secPara{
+            color:aqua;
+            background-color: blueviolet;
+            height:70px;
+            width:400px;
+            border-top: 5px solid green;
+            border-bottom: 5px solid yellow;
+            border-right: 5px solid red;
+            border-left: 5px solid hotpink;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 30px;
+        }
+        #thirdPara{
+            height:150px;
+            width:400px;
+            background-image: url('https://img.freepik.com/free-photo/beautiful-shot-tree-savanna-plains-with-blue-sky_181624-21992.jpg?w=740&t=st=1678423856~exp=1678424456~hmac=1780a9593fa9f00ef688b98302cdf34d6824e8e9fab432f6b8381bb137402279');
+            border:3px solid red;
+            background-repeat: no-repeat;/*repeat-x repeat the pic in x-axix if repeat-y then y-axix repeat*/
+            background-position: center center;
+            /* background-position: 129px 34px;
+            background-position: top center;
+            background-position: center top;
+            background-position: center right;
+            background-position: center left;
+            background-position: bottom left; */
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a heading one.</h2>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita.</p>
+    <h2>This is a heading two.</h2>
+    <p id="secPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam deleniti dolorum.</p>
+    <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident officiis sequi facere.</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+    
+        /* CSS position:static(by default),relative,absolute,fixed sticky */
+        .container{
+            border: 1px solid rgb(146, 146, 85);
+            background-color: antiquewhite;
+            height: 3444px;
+        }
+    .box{
+        border: 1px solid rgb(182, 112, 112);
+        width: 30px;
+        background-color: aquamarine;
+        height: 20px;
+        margin: 2px;
+        display: inline-block;
+        font-size:1%;
+    }
+    #box3{
+        /* relative: Position the element relative to its normal position and will leave a gap at its normal position. */
+        /* position: relative;
+        left: 25px;
+        top: 15px; */
+
+        /* absolute:Position the element relative to  the position of its first parent like here div tag. */
+        /* position: absolute;
+        top:18px;
+        left: 20px; */
+        
+        /* static: Position the element relative to show default position . */
+        /* position: static; */
+
+        /* fixed:Positions the element relative to the browser window. */
+        position: fixed;
+        right: 2px;
+        bottom: 2px;
+  }
+  #box1{
+    /* sticky: Position the element stick the originl position on web browser when page are scorll. */
+    position:sticky;
+    top:3px;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 Chat with US</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    </body>
+</html>

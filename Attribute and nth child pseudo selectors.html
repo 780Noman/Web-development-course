@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        input {
+            display: block ;
+
+        }
+
+        .container {
+
+            display: block;
+            /* margin: 50px 600px; */
+            /* Agr div ko center ma lana ho to phly width set kerty pher margin auto kerty */
+            width: 250px;
+            margin: auto;
+        }
+
+        input[type='text'] {
+            background-color: rgb(144, 144, 160);
+            border: 5px solid black;
+        }
+
+        a[target] {
+            font-size: 30px;
+            background-color: brown;
+            /* text-decoration: none; */
+            color: blueviolet;
+        }
+
+        a[target='_self'] {
+            background-color: aqua;
+            font-size: 25px;
+
+        }
+
+        input[type="email"] {
+            border: 7px solid green;
+        }
+
+        input[type="password"] {
+            border: 7px solid yellow;
+            border-radius: 15px;
+        }
+
+        /* li:nth-child(3){
+        color: red;
+    }
+    this is comment
+    li:nth-child(2n+0){
+        color:rgb(23, 230, 23);
+    } */
+        li:nth-child(even) {
+            color: blue;
+        }
+
+        li:nth-child(odd) {
+            color: brown
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google </a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your Email">
+            <input type="button" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">ITEMS 1</li>
+            <li class="item" id="item-2">ITEMS 2</li>
+            <li class="item" id="item-3">ITEMS 3</li>
+            <li class="item" id="item-4">ITEMS 4</li>
+            <li class="item" id="item-5">ITEMS 5</li>
+            <li class="item" id="item-6">ITEMS 6</li>
+            <li class="item" id="item-7">ITEMS 7</li>
+            <li class="item" id="item-8">ITEMS 8</li>
+            <li class="item" id="item-9">ITEMS 9</li>
+            <li class="item" id="item-10">ITEMS 10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Portal</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+            
+        .box{
+           
+           border: 3px solid black;
+           width: 1500px;
+           height: 80px;
+           background-color: rgb(35, 126, 35);
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <form action="portal.php">
+        <br>
+        <div>
+            <label for="Myname">Username</label>
+            <input type="text" id="Myname">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="domain">Domain</label>
+            <select name="Mydomain" id="domain">
+                <option value="aaur">aaur.edu</option>
+                <option value="firebox">Firebox-DB</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            <label for="Write"></label>
+            <textarea name="writetext" id="mytext" cols="30"
+                rows="10">*******IF YOU DON'T RECEIVED YOUR PASSWORD ON EMAIL YET! PLEASE CONTACT AT DATA CENTER*******</textarea>
+        </div>
+    </form>
+    <div class="box"></div>
+</body>
+
+</html>

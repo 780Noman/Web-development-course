@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            margin: auto;
+            width: 1350;
+            /* must write width because header is block element.*/
+            border: 5px solid goldenrod;
+            /* width: 21%; */
+            padding: 0px 0px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 73px;
+            border-radius: 50px;
+        }
+
+        h1 {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: gray;
+            margin: 18px 8px;
+            padding: 23px;
+            width: 30%;
+            display: inline-block;
+            box-sizing: border-box;/*gitni width ho gi otni rahy gi include margin and padding.*/
+
+        }
+        .container{
+            margin: auto;
+            width: 1350px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top"><!--It is a block element.-->
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="Error Image loading">
+        <h1> Welcome to my Page</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h3 class="heading">Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a eligendi tempora itaque! Explicabo
+                officia nam minus vel necessitatibus eos, corrupti ullam quae sit beatae cupiditate quasi voluptate
+                iure reiciendis.</p>
+        </div>
+        <div class="box">
+            <h3 class="heading">Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a eligendi tempora itaque! Explicabo
+                officia nam minus vel necessitatibus eos, corrupti ullam quae sit beatae cupiditate quasi voluptate
+                iure reiciendis.</p>
+        </div>
+        <div class="box">
+            <h3 class="heading">Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a eligendi tempora itaque! Explicabo
+                officia nam minus vel necessitatibus eos, corrupti ullam quae sit beatae cupiditate quasi voluptate
+                iure reiciendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

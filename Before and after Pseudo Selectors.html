@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body {
+            background-color: rgb(143, 128, 128);
+            color: rgb(158, 26, 8);
+            background: url(https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)no-repeat center center/cover;
+            opacity: 451;
+        }
+
+        .navigation {
+            /* margin-left: 300px; */
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            opacity: 450;
+            border-radius: 30px;
+        }
+
+        li {
+            list-style: none;
+            padding: 1px 40px;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+        }
+
+        .navigation a:hover {
+            background-color: brown;
+            text-decoration: underline;
+        }
+
+        section {
+            /* padding-top: 160px; */
+            display: flex;
+            justify-content: center;
+            margin: 1px 0px;
+            text-align: center;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            height: 350px;
+            font-size: 20px;
+        }
+
+        /* section::before{
+    content: "This is a content.";
+   } */
+        section::after {
+            content: "This is a content.";
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            text-shadow: 2px 3px black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            border: 2px solid green;
+            margin: 12px 12px;
+            width: 400px;
+            background-color: rgb(136, 104, 167);
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px goldenrod; */
+            box-shadow: -10px -13px goldenrod;
+            /* box-shadow: offset-x offet-y blur-color colorname;; */
+            /* box-shadow: offset-x offet-y blur-color spread-radius colorname;; */
+            box-shadow: -13px -12px 5px goldenrod;
+            box-shadow: 12px 14px 5px 7px darkmagenta;
+            /* If you want to insert shadow inside box them */
+            box-shadow: inset 4px 15px yellowgreen;
+            /* Multiple box show you can use  */
+            box-shadow: 5px 8px blue, 8px 14px red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item-1"><a href="#">Home</a></li>
+                <li class="item-2"><a href="#">About</a></li>
+                <li class="item-3"><a href="#">Service</a></li>
+                <li class="item-4"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, aut totam. Dolores eum itaque blanditiis
+            perspiciatis rem dolorum culpa recusandae, iste, quos impedit possimus odit deserunt laudantium mollitia
+            id dolorem.</p>
+    </section>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h3>C++ Course</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis repellat labore consequuntur illum,
+                quisquam iusto.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h3>HTML Course</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dolore excepturi. Dolore nobis aspernatur
+                illo!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h3>Python Course</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam vero doloremque! Vero, at
+                cupiditate?</p>
+        </div>
+    </div>
+</body>
+
+</html>
